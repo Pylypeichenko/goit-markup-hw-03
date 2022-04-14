@@ -74,6 +74,8 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -242,6 +244,8 @@ ul {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team > .container > .title {
@@ -250,13 +254,11 @@ ul {
   line-height: 1.66;
   text-align: center;
 
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .team-cards {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .team .card {
@@ -281,7 +283,7 @@ ul {
 
 .card-text .title {
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.8;
 }
 
 /* Footer */
@@ -334,6 +336,9 @@ ul {
 .projects {
   background-color: var(--main-bg-color);
   font-size: 16px;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .button {
@@ -362,7 +367,6 @@ ul {
 
 .projects .buttons {
   display: flex;
-  padding-top: 94px;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -386,6 +390,8 @@ ul {
 }
 
 .cards .card-name {
+  border: 1px solid #eeeeee;
+  border-top: none;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
