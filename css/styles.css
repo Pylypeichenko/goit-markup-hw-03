@@ -15,9 +15,11 @@
 }
 
 .container {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   width: 1200px;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 1px solid tomato;
 }
 
@@ -29,9 +31,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  margin: 0 auto;
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 button {
@@ -45,12 +53,13 @@ button {
 
 ul {
   list-style: none;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
 
 .link,
-.logo{
+.logo {
   text-decoration: none;
 }
 
@@ -74,14 +83,32 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  display: inline-block;
 }
 
 .logo.studio-header {
   color: var(--primary-header-color);
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.nav {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
 }
 
 .nav .link {
   color: var(--primary-header-color);
+
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav li:nth-child(n + 2) {
+  margin-left: 50px;
 }
 
 .nav .link:hover,
@@ -93,13 +120,35 @@ ul {
   color: var(--accent-color);
 }
 
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
 .contacts .link {
   color: var(--secondary-header-color);
+
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts li:nth-child(n + 2) {
+  margin-left: 50px;
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
+}
+
+.main-nav {
+  display: flex;
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Студия */
@@ -118,6 +167,8 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   max-width: 630px;
 }
@@ -160,6 +211,14 @@ ul {
   margin-bottom: 10px;
 }
 
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
 /* Секция Чем мы занимаемся */
 
 .what-we-doing .title {
@@ -171,17 +230,34 @@ ul {
   margin-bottom: 50px;
 }
 
+.what-we-doing-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.what-we-doing-item:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
 /* Наша команда */
 
 .team {
   background-color: #f5f4fa;
 }
 
-.team > .title {
+.team > .container > .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.66;
   text-align: center;
+
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team-cards {
+  display: flex;
+  padding-bottom: 94px;
 }
 
 .team .card {
@@ -189,6 +265,19 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-cards .card:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.card-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Footer */
@@ -200,6 +289,12 @@ footer {
 
 .logo.studio-footer {
   color: var(--secondary-title-color);
+}
+
+footer .logo {
+  display: inline-block;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .address .link {
@@ -227,7 +322,7 @@ footer {
 /* buttons */
 
 .projects {
-  background-color: var(--main-bg-color)
+  background-color: var(--main-bg-color);
   font-size: 16px;
 }
 
@@ -259,5 +354,3 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
-
