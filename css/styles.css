@@ -1,6 +1,8 @@
 :root {
   --header-bg-color: #ffffff;
   --main-bg-color: #ffffff;
+  --banner-bg-color: #2f303a;
+  --team-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --primary-title-color: #212121;
   --secondary-title-color: #ffffff;
@@ -20,6 +22,11 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 body {
@@ -45,9 +52,16 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .title {
   color: var(--primary-title-color);
   font-weight: 500;
+  font-size: 14px;
 }
 
 ul {
@@ -156,7 +170,11 @@ ul {
 /* Секция Шапка */
 
 .banner {
-  background-color: #2f303a;
+  background-color: var(--banner-bg-color);
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .banner .title {
@@ -164,14 +182,13 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  max-width: 630px;
+  max-width: 696px;
 }
 
 .btn {
@@ -183,12 +200,17 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
   margin-right: auto;
   margin-left: auto;
+  border: none;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
 }
 
 .btn:hover,
@@ -200,8 +222,6 @@ ul {
 
 .benefits {
   line-height: 1.71;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .benefits .title {
@@ -222,6 +242,10 @@ ul {
 
 /* Секция Чем мы занимаемся */
 
+.what-we-doing {
+  padding-top: 0;
+}
+
 .what-we-doing .title {
   font-weight: 700;
   font-size: 36px;
@@ -233,7 +257,6 @@ ul {
 
 .what-we-doing-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .what-we-doing-item:nth-child(n + 2) {
@@ -243,9 +266,7 @@ ul {
 /* Наша команда */
 
 .team {
-  background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--team-bg-color);
 }
 
 .team > .container > .title {
@@ -284,6 +305,7 @@ ul {
 .card-text .title {
   font-size: 16px;
   line-height: 1.8;
+  margin-bottom: 10px;
 }
 
 /* Footer */
@@ -291,9 +313,7 @@ ul {
 .footer {
   background-color: var(--footer-bg-color);
   line-height: 1.71;
-}
 
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -334,11 +354,7 @@ ul {
 /* buttons */
 
 .projects {
-  background-color: var(--main-bg-color);
   font-size: 16px;
-
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .button {
@@ -353,6 +369,8 @@ ul {
   padding-right: 22px;
   padding-bottom: 6px;
   padding-left: 22px;
+  border: none;
+  border-radius: 4px;
 }
 
 .buttons .filter:nth-child(n + 2) {
@@ -382,6 +400,8 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .cards .text {
